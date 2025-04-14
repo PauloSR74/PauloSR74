@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Paulo Santa Rita">
+    <meta name="keywords" content="HTML CSS - Starter »Formulieren">
+    <meta name="descripton" content="HTML5_formulieren_Pizza_bestellen">
+    <link rel="stylesheet" href="Eindopdracht_HTML5_formulieren_Pizza_bestellen.css">
+    <title>
+        Eindopdracht_HTML5_formulieren_Pizza_bestellen</title>
+</head>
+<!-- Na al het harde werk heeft iedereen honger! We gaan dan ook een pizza formulier ontwerpen zodat we een lekkere pizza kunnen bestellen.
+
+Je mag zelf creatief omgaan met alle aangeleerde HTML elementen en CSS vormgeving. 
+Voorzie een stuk waarbij je zelf een pizza kunt samenstellen aan de hand van vinkjes, keuzerondjes of lijstjes. 
+Daarnaast voorzie je ook een stukje waarbij je als klant informatie kan geven met info over jezelf en het leverings adres.
+
+Denk na over de juiste attributen en validatie voor elk element. 
+Gebruik labels bij de elementen en voorzie eventueel een beetje vormgeving met DIV elementen en CSS.
+
+Upload een ZIP bestand van jouw resultaat.
+-->
+
+<body>
+    <div class="container_main">
+
+
+        <div class="container_1">
+            <header><img src="media\pizzapasta.jpg" alt="pizza">
+                <nav>
+                    <p>Pizza's</p>
+                    <p>Pasta's</p>
+                    <p>Dranken</p>
+                    <p>Extra's</p>
+                </nav>
+            </header>
+            <section>
+                <header class="bestellen">
+                    <h1>Bestellen</h1>
+                </header>
+                <section class="menu_pizza">
+                    <form>
+                        <fieldset class="pizza">
+                            <legend class="menu_naam">Pizza's</legend>
+
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox" value="1">Pizza
+                                        Margherita</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Gemalen San Marzano-tomatensaus, verse mozzarella en
+                                            basilicum, een scheutje
+                                            olijfolie
+                                            en een scheutje zout.</p>
+                                    </li>
+                                </ul>
+
+                                <div class="size">
+                                    <div class="size_float">
+                                        <label for="size"><strong>Size:</strong>
+                                            <input type="radio" id="small" name="size" value="small">small
+
+                                    </div>
+
+                                    <div class="size_float">
+                                        <input type="radio" id="medium" name="size" value="medium">medium
+                                        <br>
+                                    </div>
+                                    <div class="size_float">
+                                        <input type="radio" id="large" name="size" value="large">large
+                                    </div>
+                                </div>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+
+
+
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Pizza
+                                        Marinara</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Met maar vier ingrediënten – tomaat, knoflook, oregano
+                                            en extra vergine olijfolie – is het een pizza die wordt geroemd om haar
+                                            heerlijke eenvoud.
+                                            Ter decoratie een blaadje basilicum in het midden en voilà!</p>
+                                    </li>
+                                </ul>
+
+                                <div class="size">
+                                    <div class="size_float">
+                                        <label for="size"><strong>Size:</strong>
+                                            <input type="radio" id="small" name="size" value="small">small
+
+                                    </div>
+
+                                    <div class="size_float">
+                                        <input type="radio" id="medium" name="size" value="medium">medium
+                                        <br>
+                                    </div>
+                                    <div class="size_float">
+                                        <input type="radio" id="large" name="size" value="large">large
+                                    </div>
+                                </div>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Pizza
+                                        Capricciosa</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Capricciosa is een overvloedige pizza van hoge kwaliteit
+                                            en kan met zijn rijke topping zeker tot de top-pizza’s gerekend worden:
+                                            met “Porchetta di Ariccia” in plaats van gekookte Ham.</p>
+                                    </li>
+                                </ul>
+
+                                <div class="size">
+                                    <div class="size_float">
+                                        <label for="size"><strong>Size:</strong>
+                                            <input type="radio" id="small" name="size" value="small">small
+
+                                    </div>
+
+                                    <div class="size_float">
+                                        <input type="radio" id="medium" name="size" value="medium">medium
+                                        <br>
+                                    </div>
+                                    <div class="size_float">
+                                        <input type="radio" id="large" name="size" value="large">large
+                                    </div>
+                                </div>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Pizza con
+                                        Prosciutto Crudo</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Pizza met Parmaham heerlijk in combinatie met slechts
+                                            mozzarella. Op de bodem eerst wat tomatensaus en eventueel
+                                            Parmesaanskaas-vlokken dan wordt alleen mozzarella belegd om de plakjes
+                                            prosciutto crudo erop leggen maar een minuutje voordat de pizza uit de oven
+                                            gehaald wordt.</p>
+                                    </li>
+                                </ul>
+
+                                <div class="size">
+                                    <div class="size_float">
+                                        <label for="size"><strong>Size:</strong>
+                                            <input type="radio" id="small" name="size" value="small">small
+
+                                    </div>
+
+                                    <div class="size_float">
+                                        <input type="radio" id="medium" name="size" value="medium">medium
+                                        <br>
+                                    </div>
+                                    <div class="size_float">
+                                        <input type="radio" id="large" name="size" value="large">large
+                                    </div>
+                                </div>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Pizza
+                                        Quattro Formaggi</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Tomatensaus is facultatief, Mozzarella is een must,
+                                            verder nog Gorgonzola en twee andere kazen, (bijvoorbeeld, Fontina,
+                                            Emmental, Parmesaankaas), naar keuze erop en eventueel een blaadje basilicum
+                                            om het plaatje af te maken.</p>
+                                    </li>
+                                </ul>
+
+                                <div class="size">
+                                    <div class="size_float">
+                                        <label for="size"><strong>Size:</strong>
+                                            <input type="radio" id="small" name="size" value="small">small
+
+                                    </div>
+
+                                    <div class="size_float">
+                                        <input type="radio" id="medium" name="size" value="medium">medium
+                                        <br>
+                                    </div>
+                                    <div class="size_float">
+                                        <input type="radio" id="large" name="size" value="large">large
+                                    </div>
+                                </div>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Pizza alla
+                                        Diavola</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Deze ‘duivelse’ pizza heeft een pikante smaak door de
+                                            pikante plakjes salami en de pikante olijfolie die erop gaat.
+                                            Het is geen geheim dat rode peper en pikante ingrediënten over het algemeen
+                                            als afrodisiacum werken.
+                                        </p>
+                                    </li>
+                                </ul>
+
+                                <div class="size">
+                                    <div class="size_float">
+                                        <label for="size"><strong>Size:</strong>
+                                            <input type="radio" id="small" name="size" value="small">small
+
+                                    </div>
+
+                                    <div class="size_float">
+                                        <input type="radio" id="medium" name="size" value="medium">medium
+                                        <br>
+                                    </div>
+                                    <div class="size_float">
+                                        <input type="radio" id="large" name="size" value="large">large
+                                    </div>
+                                </div>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Pizza 4
+                                        Stagioni</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Over het algemeen wordt de pizza samengesteld uit 4
+                                            ingrediënten die kenmerkend zijn voor het seizoen: champignons staan dan
+                                            voor de herfst, ham en olijven komen overeen met de winter, artisjokken zijn
+                                            de lente en tenslotte tomaten en basilicum de zomer
+                                            Maar de basistopping voor de gehele pizza is tomatensaus en mozzarella.
+                                        </p>
+                                    </li>
+                                </ul>
+
+                                <div class="size">
+                                    <div class="size_float">
+                                        <label for="size"><strong>Size:</strong>
+                                            <input type="radio" id="small" name="size" value="small">small
+
+                                    </div>
+
+                                    <div class="size_float">
+                                        <input type="radio" id="medium" name="size" value="medium">medium
+                                        <br>
+                                    </div>
+                                    <div class="size_float">
+                                        <input type="radio" id="large" name="size" value="large">large
+                                    </div>
+                                </div>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Pizza
+                                        Funghi</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Deze Pizza Funghi is wederom een populaire pizza, wordt
+                                            vaak zonder tomatensaus bereid verder komt deze pizza met romige wolkjes
+                                            mozzarella erop. De champignons omdat deze vers zijn zullen ze echter eerst
+                                            in een
+                                            pan met een beetje olijfolie en knoflook gebakken moeten worden, voordat ze
+                                            over de pizza gaan.</p>
+                                    </li>
+                                </ul>
+
+                                <div class="size">
+                                    <div class="size_float">
+                                        <label for="size"><strong>Size:</strong>
+                                            <input type="radio" id="small" name="size" value="small">small
+
+                                    </div>
+
+                                    <div class="size_float">
+                                        <input type="radio" id="medium" name="size" value="medium">medium
+                                        <br>
+                                    </div>
+                                    <div class="size_float">
+                                        <input type="radio" id="large" name="size" value="large">large
+                                    </div>
+                                </div>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Pizza
+                                        Prosciutto e Funghi</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Deze Pizza Prosciutto e funghi. De pizza funghi wordt
+                                            deze keer met gekookte ham en champignons bereid.</p>
+                                    </li>
+                                </ul>
+
+                                <div class="size">
+                                    <div class="size_float">
+                                        <label for="size"><strong>Size:</strong>
+                                            <input type="radio" id="small" name="size" value="small">small
+
+                                    </div>
+
+                                    <div class="size_float">
+                                        <input type="radio" id="medium" name="size" value="medium">medium
+                                        <br>
+                                    </div>
+                                    <div class="size_float">
+                                        <input type="radio" id="large" name="size" value="large">large
+                                    </div>
+                                </div>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Pizza
+                                        Tonno e Cipolla</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">De pizza Tonno e cipolla is het lekkerst als deze bereid
+                                            wordt met rode ui. Ook hier geldt dat de bodem bedekt wordt met wat
+                                            tomatensaus;
+                                            wat gehalveerde kerstomaatjes erbij misstaan ook niet. Buiten de tonijn en
+                                            uienringen, gaat er ook hier en daar wat mozzarella op en eventueel oregano.
+                                        </p>
+                                    </li>
+                                </ul>
+
+                                <div class="size">
+                                    <div class="size_float">
+                                        <label for="size"><strong>Size:</strong>
+                                            <input type="radio" id="small" name="size" value="small">small
+
+                                    </div>
+
+                                    <div class="size_float">
+                                        <input type="radio" id="medium" name="size" value="medium">medium
+                                        <br>
+                                    </div>
+                                    <div class="size_float">
+                                        <input type="radio" id="large" name="size" value="large">large
+                                    </div>
+                                </div>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Pizza
+                                        Vegetarianaa</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">De pizza vegeteriana wordt eerst met tomatensaus belegd,
+                                            veelal komt daar bovenop courgette in plakjes, aubergine in plakjes, reepjes
+                                            rode en/of gele paprika en wellicht olijven. Het beste is om de aubergine
+                                            vooraf even op de gril te leggen.
+                                            Je kan natuurlijk ook allerlei andere pizza soorten groenten gebruiken! Nog
+                                            wat mozzarella erop als je niet vegan bent, en hij is af.</p>
+                                    </li>
+                                </ul>
+
+                                <div class="size">
+                                    <div class="size_float">
+                                        <label for="size"><strong>Size:</strong>
+                                            <input type="radio" id="small" name="size" value="small">small
+
+                                    </div>
+
+                                    <div class="size_float">
+                                        <input type="radio" id="medium" name="size" value="medium">medium
+                                        <br>
+                                    </div>
+                                    <div class="size_float">
+                                        <input type="radio" id="large" name="size" value="large">large
+                                    </div>
+                                </div>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Pizza
+                                        Calzone</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">In Napels noemt men deze dubbelgevouwen pizza een Cazone
+                                            (calzone), ze worden daar gemaakt met een vulling van Ricotta Kaas, Tomaten,
+                                            Mozzarella en peper of met een vulling van ricotta kaas, mozzarella, paprika
+                                            en kaantjes.
+
+                                            Nog een derde bekende Napoletaanse vulling is schapen-ricotta kaas, gerookte
+                                            provola, geraspte pecorino, peper, kaantjes, salami en plakjes hardgekookt
+                                            ei. </p>
+                                    </li>
+                                </ul>
+
+                                <div class="size">
+                                    <div class="size_float">
+                                        <label for="size"><strong>Size:</strong>
+                                            <input type="radio" id="small" name="size" value="small">small
+
+                                    </div>
+
+                                    <div class="size_float">
+                                        <input type="radio" id="medium" name="size" value="medium">medium
+                                        <br>
+                                    </div>
+                                    <div class="size_float">
+                                        <input type="radio" id="large" name="size" value="large">large
+                                    </div>
+                                </div>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="totaaal">
+
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </section>
+                <section class="menu_pasta">
+                    <form>
+                        <fieldset class="pasta">
+                            <legend class="menu_naam">Pasta's</legend>
+
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Spaghetti
+                                        carbonara</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">De enige echte spaghetti carbonara vindt zijn oorsprong
+                                            in het Italliaanse Lazio.
+                                            Uiteraard zonder room én met eieren, pancetta en pecorino. Buon appetito!
+                                        </p>
+                                    </li>
+                                </ul>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+
+
+
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Tagliatelle al
+                                        ragu</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">De echte spaghetti bolognaise? Die eet je met
+                                            tagliatelle en ragu, een rijke vlezige saus uit Bologne.</p>
+                                    </li>
+                                </ul>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Pasta alla
+                                        Norma</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Pasta alla Norma is een heerlijk vegetarisch
+                                            pastagerecht met linguine en gestoofde aubergine. Snel klaar en bomvol
+                                            smaak, dit moet je proberen!</p>
+                                    </li>
+                                </ul>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Penne
+                                        all'arrabbiata</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Dé perfecte pasta voor wie van wat pit houdt. Deze
+                                            eenvoudige saus smaakt heerlijk af en kan je uiteraard zo pikant maken als
+                                            je zelf wil.</p>
+                                    </li>
+                                </ul>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Spaghetti
+                                        Puttanesca</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Een klassieke pasta uit het Zuiden van Italië, met
+                                            ansjovis, chili, olijven, tomaten, kappertjes en knoflook. Een echte zomerse
+                                            pasta, die je doet wegdromen naar een terrasje aan de Italiaanse kust.</p>
+                                    </li>
+                                </ul>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Lasagne met
+                                        spinazie en ricotta</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Een heerlijke veggie lasagne! De spinazie stoven we kort
+                                            aan in wat gesmolten boter en gaan we vervolgens mengen onder de ricotta. De
+                                            ovenschaal wordt als volgt opgevuld: laag tomatensaus, laag lasagnevellen,
+                                            laag ricotta-spinaziemengsel. Bestrooien met parmezaan en 30 minuten de oven
+                                            in en smullen maar!</p>
+                                    </li>
+                                </ul>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Spaghetti
+                                        all'Amatriciana</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Amatriciana-saus is een op-en-top Italiaanse saus die
+                                            zijn origine kent in het dorpje Amatricia in de provincie Lazio. Origineel
+                                            werd het gemaakt met varkenswang, maar gerookt spek is een waardig
+                                            alternatief. Een lekker stevige en pittige saus die van deze pasta een ware
+                                            klassieker maakt, heerlijk!</p>
+                                    </li>
+                                </ul>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Pasta pesto alla
+                                        Genovese</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">De échte pesto Genovese kent iedereen ondertussen, met
+                                            basilicum, pijnboompitten en parmezaan. Maar wist je dat in de authentieke
+                                            pastaschotel naast de pesto ook aardappelen en sperzieboontjes worden
+                                            toegevoegd? Vreemd he? Maar het smaakt wonderwel erg lekker, dit moet je
+                                            proberen!</p>
+                                    </li>
+                                </ul>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Lasagne alla
+                                        Bolognese met ragù en bechamelsaus</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Lasagne is een oud gerecht dat zijn oorsprong vindt in
+                                            de Romeinse tijd, maar de Bolognesesaus, ook bekend als ragù alla Bolognese,
+                                            komt uit de stad Bologna in Noord-Italië.
+                                            Om de klassieke lasagne Bolognese te maken, begin je met het bereiden van de
+                                            Bolognesesaus. Het gehakt wordt bruin gebakken met de groenten, waarna
+                                            tomatenpuree, gezeefde tomaten, wijn en kruiden worden toegevoegd. De saus
+                                            suddert dan langzaam, terwijl de smaken zich ontwikkelen en de saus dikker
+                                            wordt.
+
+                                            Vervolgens wordt de bechamelsaus bereid door boter te smelten, bloem toe te
+                                            voegen en melk langzaam in te schenken. Deze romige saus voegt een heerlijke
+                                            textuur toe aan de lasagne.
+
+                                            Daarna worden de lagen opgebouwd door een laag Bolognesesaus, gevolgd door
+                                            lasagnevellen en bechamelsaus. Deze lagen worden herhaald tot de
+                                            ingrediënten op zijn. De bovenste laag wordt bestrooid met geraspte kaas
+                                            voor een heerlijk goudbruin en knapperig korstje.</p>
+                                    </li>
+                                </ul>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Gnocchi met
+                                        spinazie en pancetta</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Gnocchi is een Italiaanse pastasoort. Het woord gnocchi,
+                                            meervoud van het Italiaanse gnocco, betekent "klont".
+                                            Bij de gnocchi met spinazie en pancetta worden eigenlijk slechts 3 extra
+                                            ingrediënten gebruikt. Olijfolie, boter en witte wijn horen natuurlijk
+                                            gewoon tot de basics die je standaard nodig hebt in de Italiaanse keuken</p>
+                                    </li>
+                                </ul>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Orecchiette alla
+                                        pugliese</label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">In Italië houdt men van pasta, maar in Puglia houdt men
+                                            vooral van Orecchiette. Orecchiette zijn een soort pasta en betekent
+                                            eigenlijk ‘oortjes’. Dit komt door hun ronde en half gebogen vorm. Omdat de
+                                            orecchiette een pasta zijn die vooral in Puglia wordt gegeten, worden ze ook
+                                            wel Orecchiette Pugliesi genoemd. Hierbij voegen wij verse tomaten,knoflook,
+                                            een paar verse basilicum blaadjes,kaas raspen van: cacio ricotta of
+                                            parmezaanse kaas (parmigiano). Buon appetito!</p>
+                                    </li>
+                                </ul>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pizza_choice">
+                                <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Farfalle met zalm
+                                    </label> </p>
+                                <ul>
+                                    <li>
+                                        <p class="omschrijving">Farfalle met zalm combineert pasta en vis, met een
+                                            optionele
+                                            toevoeging van kookroom die het romig en smakelijk maakt.</p>
+                                    </li>
+                                </ul>
+
+                                <div class="aantal">
+                                    <p>
+                                        <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                            placeholder="0">
+                                    </p>
+                                    <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                    </p>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </section>
+                <section class="menu_extras">
+                    <form>
+                        <fieldset class="extras">
+                            <legend class="menu_naam">Extras:</legend>
+                            <table class="menu_extras_table">
+                                <tr class="column_extras_left">
+                                    <td>
+                                        <div class="choice">
+                                            <p>
+                                                <label><input class="checkbox" type="checkbox">Extra tomatensaus</label>
+                                            </p>
+                                            <p>
+                                                <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                                <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                                    placeholder="0">
+                                            </p>
+                                            <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                            </p>
+                                            <p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="choice">
+                                            <p>
+                                                <label><input class="checkbox" type="checkbox">Extra Kaas</label>
+                                            </p>
+                                            <p>
+                                                <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                                <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                                    placeholder="0">
+                                            </p>
+                                            <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="column_extras_right">
+                                    <td>
+                                        <div class="choice">
+                                            <label><input class="checkbox" type="checkbox">Extra Groenten</label>
+                                            </p>
+                                            <p>
+                                                <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                                <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                                    placeholder="0">
+                                            </p>
+                                            <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                            </p>
+                                            <p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="choice">
+                                            <label><input class="checkbox" type="checkbox">Extra Prosciutto</label>
+                                            </p>
+                                            <p>
+                                                <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                                <input type="number" id="quantity" name="quantity" min="1" max="10"
+                                                    placeholder="0">
+                                            </p>
+                                            <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </form>
+                </section>
+                <section class="menu_desserts">
+                    <form>
+                        <fieldset class="desserts">
+                            <legend class="menu_naam">Desserts:</legend>
+                            <div class="choice">
+                                <p>
+                                    <label><input class="checkbox" type="checkbox">Tiramisu</label>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+                            <div class="choice_r">
+                                <p>
+                                    <label><input class="checkbox" type="checkbox">Cannoli Sicilien</label>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+                            <div class="choice">
+                                <p>
+                                    <label><input class="checkbox" type="checkbox"> Zabaione met aardbeien</label>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+
+                            <div class="choice_r">
+                                <p>
+                                    <label><input class="checkbox" type="checkbox">Semifreddo van vijgen</label>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+
+                            <div class="choice">
+                                <p>
+                                    <label><input class="checkbox" type="checkbox">Zucotto</label>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+
+                            <div class="choice_r">
+                                <p>
+                                    <label><input class="checkbox" type="checkbox">Mousse van limoncello</label>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+
+                            <div class="choice">
+                                <p>
+                                    <label><input class="checkbox" type="checkbox"> Crostata ricotta</label>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+
+                            <div class="choice_r">
+                                <p>
+                                    <label><input class="checkbox" type="checkbox">Lichte panna cotta met
+                                        passievruchten</label>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+                            <div class="choice">
+                                <p>
+                                    <label><input class="checkbox" type="checkbox">Polentataart met peren</label>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+                <section class="menu_dranken">
+                    <form>
+                        <fieldset class="dranken">
+                            <legend class="menu_naam">Dranken</legend>
+                            <div class="choice">
+                                <p>
+                                    <label>Rood Wijnen</label>
+                                    <select name="rode wijnen" id="rode wijnen">
+                                        <option value="Rood Wijnen (75ml)">Rode Wijnen (75ml)</option>
+                                        <option value="Massimo Firelli Susumaniello Prestige">Massimo Firelli
+                                            Susumaniello Prestige</option>
+                                        <option value="Borgo al Pascolo Chianti">Borgo al Pascolo Chianti</option>
+                                        <option value="La Bestia Governo">La Bestia Governo</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+                            <div class="choice_r">
+                                <p>
+                                    <label>Wit Wijnen</label>
+                                    <select name="wite wijnen" id="wite wijnen">
+                                        <option value="Rood Wijnen (75ml)">Rode Wijnen (75ml)</option>
+                                        <option value="Bufalo Nero Bianco">Bufalo Nero Bianco</option>
+                                        <option value="Rosatti Pinot Grigio">Rosatti Pinot Grigio</option>
+                                        <option value="Tinazzi Tenuta Valleselle Garda Bianc">Tinazzi Tenuta Valleselle
+                                            Garda Bianc</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+                            <div class="choice">
+                                <p>
+                                    <label>Rose Wijnen</label>
+                                    <select name="Rose Wijnen" id="rose wijnen">
+                                        <option value="Rose Wijnen (75ml)">Rode Wijnen (75ml)</option>
+                                        <option value="Bufalo Nero Rose">Bufalo Nero Bianco</option>
+                                        <option value="Rosatti Pinot Grigio">Rosatti Pinot Grigio</option>
+                                        <option value="Tinazzi Tenuta Valleselle Garda Rose">Tinazzi Tenuta Valleselle
+                                            Garda Rose</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+                            <div class="choice_r">
+                                <p>
+                                    <label>Beer</label>
+                                    <select name="Italiaanse Bier-Wijn Hybride" id="Italiaanse Bier-Wijn Hybride">
+                                        <option value="Italiaanse Bier-Wijn Hybride">Bier-Wijn</option>
+                                        <option value="Settembre van Birrificio Del Ducato">Settembre</option>
+                                        <option value="Pinard De Bruxelles">Pinard De Bruxelles</option>
+                                        <option value="Umberta">Umberta</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+                            <div class="choice">
+                                <p>
+                                    <label>Beer</label>
+                                    <select name="Beer" id="beer" placeholder="Beer">
+                                        <option value="Beer">Italiaanse Beer</option>
+                                        <option value="Messina">Messina</option>
+                                        <option value="Forst">Forst</option>
+                                        <option value="Peroni Nastro Azzurro">Peroni Nastro Azzurro</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+                            <div class="choice_r">
+                                <p>
+                                    <label>Frisdrank</label>
+                                    <select name="Frisdrank" id="Frisdrank">
+                                        <option value="Frisdrank">Frisdrank</option>
+                                        <option value="Pepsi-Cola">Pepsi-Cola</option>
+                                        <option value="Sprite">Sprite</option>
+                                        <option value="Coca-Cola">Coca-Cola</option>
+                                        <option value="Fanta">Fanta</option>
+                                        <option value=" Ice Tea"> Ice Tea</option>
+                                        <option value="Aperol Spritz">Aperol Spritz</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+                            <div class="choice">
+                                <p>
+                                    <label>Vers Sap</label>
+                                    <select name="Vers Sap" id="beer" placeholder="Vers Sap">
+                                        <option value="Vers Sap">Vers Sap</option>
+                                        <option value="Sinas">SPA Blauw</option>
+                                        <option value="Lemonade">SPA Rood</option>
+                                        <option value="Apple">Chaudfontaine Bruis</option>
+                                        <option value="Bessen">Chaudfontaine Plat</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+                            <div class="choice_r">
+                                <p>
+                                    <label>Water</label>
+                                    <select name="Water" id="beer" placeholder="Water">
+                                        <option value="Water">Water</option>
+                                        <option value="SPA">SPA Blauw</option>
+                                        <option value="SPA">SPA Rood</option>
+                                        <option value="Chaudfontaine">Chaudfontaine Bruis</option>
+                                        <option value="Chaudfontaine">Chaudfontaine Plat</option>
+                                        <option value="Chaudfontaine">Chaudfontaine Licht Bruis</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="quantity">Aantal: (Tussen 1 and 10):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="0">
+                                </p>
+                                <p><input class="toevoegen" type="submit" value="Toevoegen">
+                                </p>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </section>
+            </section>
+        </div>
+
+
+        <div class="container_2">
+
+            <section class="bestelform">
+                <form action="bestelingafronden.html">
+                    <fieldset>
+                        <legend class="pizza_naam">Persoonelijke gegevens:</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="fname">First name:</label>
+                                </td>
+                                <td><input type="text" id="fname" name="fname" placeholder="Voornaam"></td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <label for="lname">Last name:</label>
+                                <td><input type="text" id="lname" name="lname" placeholder="Achternaam"></td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <label for="adres">Adres:</label>
+                                <td><input type="text" id="adres" name="adres" placeholder="adres"></td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <label for="locatie">Locatie:</label>
+                                <td><input type="text" id="adres" name="adres" placeholder="adres"></td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <label for="postcode">Postcode:</label>
+                                <td><input type="text" id="postcode" name="postcode" placeholder="postcode"></td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <label for="telefoon">Telefoon:</label>
+                                <td><input type="text" id="telefoon" name="telefoon" placeholder="telefoon"></td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <label for="email">Email:</label>
+                                <td><input type="email" id="email" name="email" placeholder="voorbeeld@webmail.domain">
+                                </td>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="pizza_naam">Registeratie:</legend>
+                        <table>
+                            <tr>
+                                <td><label for="gebruikersnaaam">Gebruikersnaaam:</label></td>
+                                <td><input type="text" id="gebruikersnaaam" name="gebruikersnaaam"
+                                        placeholder="gebruikersnaaam"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Wachtwoord">Wachtwoord:</label></td>
+                                <td><input type="text" id="Wachtwoord" name="Wachtwoord" placeholder="Wachtwoord"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Herhaal Wachtwoord">Wachtwoord:</label></td>
+                                <td><input type="text" id="Wachtwoord" name="Wachtwoord"
+                                        placeholder="Herhaal Wachtwoord"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="pizza_naam">Akkord en Verzenden:</legend>
+                        <p><label class="pizza_naam"><input class="checkbox" type="checkbox">Ik ben akkord met
+                                de voorwaarden!</label></p>
+                        <p> <input class="toevoegen" type="submit" value="Verzenden"></p>
+
+                    </fieldset>
+                </form>
+            </section>
+
+            <section class="betaalmethoden">
+                <form>
+                    <fieldset>
+                        <legend class="pizza_naam">Betalingsmethoden:</legend>
+                        <label for="Master">Master</label>
+                        <input type="radio" id="master" name="betalingsmethode" value="master">
+                        <label for="Master">Maestro</label>
+                        <input type="radio" id="maestro" name="betalingsmethode" value="maestro">
+                        <label for="Master">Visa</label>
+                        <input type="radio" id="visa" name="betalingsmethode" value="visa">
+                        <label for="Master">Payconic</label>
+                        <input type="radio" id="payconic" name="betalingsmethode" value="payconic">
+                        <label for="Master">Banccontact</label>
+                        <input type="radio" id="banccontact" name="betalingsmethode" value="banccontact">
+
+                    </fieldset>
+                </form>
+            </section>
+            <section class="totaal">
+                <form>
+                    <fieldset>
+                        <legend class="pizza_naam">Te Betalen:</legend>
+                        <p> <input class="toevoegen" type="submit" value="Betalen"></p>
+
+                    </fieldset>
+                </form>
+            </section>
+            <section class="wissen">
+                <form>
+                    <fieldset>
+
+                        <p><input class="reset" type="reset" value="Bestelling Wissen"></p>
+
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>
